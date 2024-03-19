@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <h2>Hello,{{user_name}}</h2>
+    <h2>My address is {{address}}</h2>
+    <h2>Do you want to kill someone? {{quote}}</h2>
+
+    {{queryset}}<br>
+    
+    {% for todo in queryset %}
+        {{todo.itle}} <br>
+        {{todo.description}}
+    {% endfor %}
+  
+</body>
+</html>
